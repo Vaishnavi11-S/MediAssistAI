@@ -26,18 +26,17 @@ public ResponseEntity<?> getUserConversations() {
     List<ChatConversation> conversations = chatConversationRepository.findAll();
     return ResponseEntity.ok(conversations);
 }
+@PostMapping
+public ResponseEntity<?> createConversation(
+        @RequestBody ChatConversation conversation) {
 
-    @PostMapping
+    conversation.setUserId("guest");
+    conversation.setCreatedAt(System.currentTimeMillis());
+    conversation.setUpdatedAt(System.currentTimeMillis());
     
-    public ResponseEntity<?> createConversation(@RequestBody ChatConversation conversation, Authentication authentication) {
-        conversation.setUserId("guest");
-        conversation.setCreatedAt(System.currentTimeMillis());
-        conversation.setUpdatedAt(System.currentTimeMillis());
-        
-        ChatConversation saved = chatConversationRepository.save(conversation);
-        return ResponseEntity.ok(saved);
-    }
-
+    ChatConversation saved = chatConversationRepository.save(conversation);
+    return ResponseEntity.ok(saved);
+}
     @PutMapping("/{id}")
     
     public ResponseEntity<?> updateConversation(@PathVariable String id, @RequestBody ChatConversation conversation) {
