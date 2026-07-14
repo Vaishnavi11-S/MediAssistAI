@@ -21,18 +21,16 @@ public class ChatController {
         this.chatConversationRepository = chatConversationRepository;
     }
 
-    @GetMapping
-    @PreAuthorize("isAuthenticated()")
-    public ResponseEntity<?> getUserConversations(Authentication authentication) {
-        String userId = authentication.getName();
-        List<ChatConversation> conversations = chatConversationRepository.findByUserId(userId);
-        return ResponseEntity.ok(conversations);
-    }
+@GetMapping
+public ResponseEntity<?> getUserConversations() {
+    List<ChatConversation> conversations = chatConversationRepository.findAll();
+    return ResponseEntity.ok(conversations);
+}
 
     @PostMapping
-    @PreAuthorize("isAuthenticated()")
+    
     public ResponseEntity<?> createConversation(@RequestBody ChatConversation conversation, Authentication authentication) {
-        conversation.setUserId(authentication.getName());
+        conversation.setUserId("guest");
         conversation.setCreatedAt(System.currentTimeMillis());
         conversation.setUpdatedAt(System.currentTimeMillis());
         
@@ -41,7 +39,7 @@ public class ChatController {
     }
 
     @PutMapping("/{id}")
-    @PreAuthorize("isAuthenticated()")
+    
     public ResponseEntity<?> updateConversation(@PathVariable String id, @RequestBody ChatConversation conversation) {
         conversation.setId(id);
         conversation.setUpdatedAt(System.currentTimeMillis());
@@ -51,7 +49,7 @@ public class ChatController {
     }
 
     @DeleteMapping("/{id}")
-    @PreAuthorize("isAuthenticated()")
+    
     public ResponseEntity<?> deleteConversation(@PathVariable String id) {
         chatConversationRepository.deleteById(id);
         return ResponseEntity.ok(Map.of("message", "Conversation deleted"));
