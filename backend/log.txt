@@ -1,0 +1,271 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.mediassist:mediassist-backend >------------------
+[INFO] Building MediAssist AI Backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ mediassist-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mediassist-backend ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mediassist-backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ mediassist-backend ---
+[INFO] skip non existing resourceDirectory C:\Users\welcome\MediassistAI\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ mediassist-backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.0:run (default-cli) < test-compile @ mediassist-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.0:run (default-cli) @ mediassist-backend ---
+[INFO] Attaching agents: []
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.0)
+
+2026-07-13T10:41:22.909+05:30  INFO 13932 --- [mediassist-backend] [           main] com.mediassist.MediassistApplication     : Starting MediassistApplication using Java 21.0.11 with PID 13932 (C:\Users\welcome\MediassistAI\backend\target\classes started by welcome in C:\Users\welcome\MediassistAI\backend)
+2026-07-13T10:41:22.910+05:30 DEBUG 13932 --- [mediassist-backend] [           main] com.mediassist.MediassistApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-07-13T10:41:22.911+05:30  INFO 13932 --- [mediassist-backend] [           main] com.mediassist.MediassistApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-07-13T10:41:23.492+05:30  INFO 13932 --- [mediassist-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-07-13T10:41:23.637+05:30  INFO 13932 --- [mediassist-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 9 MongoDB repository interfaces.
+2026-07-13T10:41:24.134+05:30  INFO 13932 --- [mediassist-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-13T10:41:24.143+05:30  INFO 13932 --- [mediassist-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-13T10:41:24.144+05:30  INFO 13932 --- [mediassist-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-07-13T10:41:24.216+05:30  INFO 13932 --- [mediassist-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-13T10:41:24.217+05:30  INFO 13932 --- [mediassist-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1268 ms
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+2026-07-13T10:41:24.533+05:30  INFO 13932 --- [mediassist-backend] [           main] org.mongodb.driver.client                : MongoClient with metadata {"application": {"name": "Cluster0"}, "driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.11.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/21.0.11+9-LTS-211"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='vaishnavishanmugam2006_db_user', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6909f6be, com.mongodb.Jep395RecordCodecProvider@6b5ab2f2, com.mongodb.KotlinCodecProvider@315c081]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=cluster0.j6acbut.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-rtntna-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='Cluster0', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2026-07-13T10:41:24.549+05:30  INFO 13932 --- [mediassist-backend] [but.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-duitzzc-shard-00-02.j6acbut.mongodb.net:27017 to client view of cluster
+2026-07-13T10:41:24.580+05:30  INFO 13932 --- [mediassist-backend] [but.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-duitzzc-shard-00-00.j6acbut.mongodb.net:27017 to client view of cluster
+2026-07-13T10:41:24.582+05:30  INFO 13932 --- [mediassist-backend] [but.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server ac-duitzzc-shard-00-01.j6acbut.mongodb.net:27017 to client view of cluster
+2026-07-13T10:41:24.971+05:30 DEBUG 13932 --- [mediassist-backend] [           main] c.m.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-07-13T10:41:25.076+05:30  WARN 13932 --- [mediassist-backend] [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIController' defined in file [C:\Users\welcome\MediassistAI\backend\target\classes\com\mediassist\controller\AIController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'geminiService': Injection of autowired dependencies failed
+2026-07-13T10:41:25.082+05:30  INFO 13932 --- [mediassist-backend] [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-07-13T10:41:25.087+05:30  WARN 13932 --- [mediassist-backend] [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [BufferPoolPruner-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1763)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+2026-07-13T10:41:25.087+05:30  WARN 13932 --- [mediassist-backend] [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='6a54737c7da39f729da620a2', description='Cluster0'}-ac-duitzzc-shard-00-02.j6acbut.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:208)
+ java.base/sun.security.validator.Validator.validate(Validator.java:256)
+ java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+ java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+ java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1271)
+ java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1164)
+ java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1107)
+ java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+ java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:477)
+ java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:448)
+ java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:206)
+ java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+ java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1505)
+ java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1420)
+ java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+ java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:922)
+ java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1291)
+ com.mongodb.internal.connection.SocketStream.write(SocketStream.java:164)
+ com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:584)
+ com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:419)
+ com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:364)
+ com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:102)
+ com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:49)
+ com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+ com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+ com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:213)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:196)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:156)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+2026-07-13T10:41:25.088+05:30  WARN 13932 --- [mediassist-backend] [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='6a54737c7da39f729da620a2', description='Cluster0'}-ac-duitzzc-shard-00-00.j6acbut.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/java.lang.AbstractStringBuilder.append(AbstractStringBuilder.java:592)
+ java.base/java.lang.StringBuilder.append(StringBuilder.java:179)
+ java.base/sun.security.x509.AVA.toRFC2253CanonicalString(AVA.java:823)
+ java.base/sun.security.x509.RDN.toRFC2253StringInternal(RDN.java:435)
+ java.base/sun.security.x509.RDN.toRFC2253String(RDN.java:415)
+ java.base/sun.security.x509.X500Name.getRFC2253CanonicalName(X500Name.java:735)
+ java.base/sun.security.x509.X500Name.equals(X500Name.java:431)
+ java.base/javax.security.auth.x500.X500Principal.equals(X500Principal.java:467)
+ java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:240)
+ java.base/sun.security.validator.Validator.validate(Validator.java:256)
+ java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+ java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+ java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1271)
+ java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1164)
+ java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1107)
+ java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+ java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:477)
+ java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:448)
+ java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:206)
+ java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+ java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1505)
+ java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1420)
+ java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+ java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:922)
+ java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1291)
+ com.mongodb.internal.connection.SocketStream.write(SocketStream.java:164)
+ com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:584)
+ com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:419)
+ com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:364)
+ com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:102)
+ com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:49)
+ com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+ com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+ com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:213)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:196)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:156)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+2026-07-13T10:41:25.088+05:30  WARN 13932 --- [mediassist-backend] [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='6a54737c7da39f729da620a2', description='Cluster0'}-ac-duitzzc-shard-00-01.j6acbut.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/sun.security.util.math.intpoly.IntegerPolynomial.conditionalSwap(IntegerPolynomial.java:469)
+ java.base/sun.security.util.math.intpoly.IntegerPolynomial$MutableElement.conditionalSwapWith(IntegerPolynomial.java:694)
+ jdk.crypto.ec/sun.security.ec.XECOperations.cswap(XECOperations.java:183)
+ jdk.crypto.ec/sun.security.ec.XECOperations.pointMultiply(XECOperations.java:231)
+ jdk.crypto.ec/sun.security.ec.XECOperations.encodedPointMultiply(XECOperations.java:93)
+ jdk.crypto.ec/sun.security.ec.XDHKeyAgreement.engineDoPhase(XDHKeyAgreement.java:145)
+ java.base/javax.crypto.KeyAgreement.doPhase(KeyAgreement.java:583)
+ java.base/sun.security.ssl.KAKeyDerivation.t13DeriveKey(KAKeyDerivation.java:103)
+ java.base/sun.security.ssl.KAKeyDerivation.deriveKey(KAKeyDerivation.java:63)
+ java.base/sun.security.ssl.ServerHello$T13ServerHelloConsumer.consume(ServerHello.java:1286)
+ java.base/sun.security.ssl.ServerHello$ServerHelloConsumer.onServerHello(ServerHello.java:1004)
+ java.base/sun.security.ssl.ServerHello$ServerHelloConsumer.consume(ServerHello.java:884)
+ java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+ java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:477)
+ java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:448)
+ java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:206)
+ java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+ java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1505)
+ java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1420)
+ java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+ java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:922)
+ java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1291)
+ com.mongodb.internal.connection.SocketStream.write(SocketStream.java:164)
+ com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:584)
+ com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:419)
+ com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:364)
+ com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:102)
+ com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:49)
+ com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+ com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+ com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:213)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:196)
+ com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:156)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+2026-07-13T10:41:25.089+05:30  WARN 13932 --- [mediassist-backend] [           main] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='6a54737c7da39f729da620a2', description='Cluster0'}-ac-duitzzc-shard-00-01.j6acbut.mongodb.net:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/sun.security.provider.certpath.PKIX.checkParams(PKIX.java:60)
+ java.base/sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:82)
+ java.base/java.security.cert.CertPathValidator.validate(CertPathValidator.java:309)
+ java.base/sun.security.validator.PKIXValidator.doValidate(PKIXValidator.java:313)
+ java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:267)
+ java.base/sun.security.validator.Validator.validate(Validator.java:256)
+ java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:230)
+ java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+ java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1271)
+ java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1164)
+ java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1107)
+ java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+ java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:477)
+ java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:448)
+ java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:206)
+ java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+ java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1505)
+ java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1420)
+ java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+ java.base/sun.security.ssl.SSLSocketImpl.ensureNegotiated(SSLSocketImpl.java:922)
+ java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1291)
+ com.mongodb.internal.connection.SocketStream.write(SocketStream.java:164)
+ com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:584)
+ com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:419)
+ com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:364)
+ com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:102)
+ com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:49)
+ com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+ com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+ com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:213)
+ com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.initialize(DefaultServerMonitor.java:427)
+ com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:403)
+ java.base/java.lang.Thread.run(Thread.java:1583)
+2026-07-13T10:41:25.097+05:30  INFO 13932 --- [mediassist-backend] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-13T10:41:25.125+05:30 ERROR 13932 --- [mediassist-backend] [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'AIController' defined in file [C:\Users\welcome\MediassistAI\backend\target\classes\com\mediassist\controller\AIController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'geminiService': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:802) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:241) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:946) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-3.2.0.jar:3.2.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331) ~[spring-boot-3.2.0.jar:3.2.0]
+	at com.mediassist.MediassistApplication.main(MediassistApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'geminiService': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:499) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1441) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 19 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'gemini.api.url' in value "${gemini.api.url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.1.1.jar:6.1.1]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.1.1.jar:6.1.1]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.1.1.jar:6.1.1]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.1.1.jar:6.1.1]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:921) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1372) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1348) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:769) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:752) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.1.jar:6.1.1]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:493) ~[spring-beans-6.1.1.jar:6.1.1]
+	... 31 common frames omitted
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.752 s
+[INFO] Finished at: 2026-07-13T10:41:25+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.2.0:run (default-cli) on project mediassist-backend: Process terminated with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
